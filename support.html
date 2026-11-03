@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Support • Pinpal: US Travel Map &amp; Memory Vault</title>
+    <title>Customer Support &amp; FAQ • Pinpal: US Travel Map &amp; Memory Vault</title>
     <meta name="description" content="Official support, FAQs, and customer assistance for Pinpal: US Travel Map & Memory Vault.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,19 +81,24 @@
         }
         .faq-item {
             border-bottom: 1px solid var(--border);
-            padding: 14px 0;
+            padding: 16px 0;
         }
-        .faq-item:last-child { border-bottom: none; }
+        .faq-item:first-of-type { padding-top: 6px; }
+        .faq-item:last-child { border-bottom: none; padding-bottom: 4px; }
         .faq-question {
-            font-weight: 600;
+            font-weight: 700;
             font-size: 0.98rem;
             color: var(--text-primary);
-            margin-bottom: 6px;
+            margin-bottom: 8px;
+            line-height: 1.4;
         }
         .faq-answer {
             font-size: 0.88rem;
             color: var(--text-secondary);
-            line-height: 1.5;
+            line-height: 1.55;
+        }
+        .faq-answer strong {
+            color: #e2e8f0;
         }
         .contact-box {
             text-align: center;
@@ -138,53 +143,75 @@
     <div class="container">
         <header class="header">
             <div class="brand-badge">📍 Pinpal Help Center</div>
-            <h1>Customer Support</h1>
-            <p class="subtitle">Frequently asked questions, troubleshooting, and direct support</p>
+            <h1>Customer Support &amp; FAQ</h1>
+            <p class="subtitle">Frequently asked questions, account management, and direct customer assistance</p>
         </header>
 
         <section class="card">
             <h2>❓ Frequently Asked Questions</h2>
 
             <div class="faq-item">
-                <div class="faq-question">What happens to my photos and trips if I cancel or pause my subscription?</div>
-                <div class="faq-answer"><strong>Your memories are yours forever. Zero photos, trips, or flights are ever deleted.</strong> All your uploaded Polaroid photos, state map covers, flight history, and planned itineraries remain 100% saved and accessible on your device and in your private backups. If your subscription lapses, your account simply transitions to Read-Only mode: you keep everything you've already created, but cannot add new items beyond the free tier limits until you renew.</div>
+                <div class="faq-question">What happens to my logged trips and photos if I cancel or pause my subscription?</div>
+                <div class="faq-answer"><strong>Your memories are yours forever. Zero photos, trips, or flight logs are ever deleted.</strong> All your uploaded Polaroid memories, state map covers, aviation records, and itinerary entries remain 100% saved and accessible on your device and in your private backups. If your subscription lapses, your account simply transitions to <strong>Read-Only mode</strong>: you retain full access to everything you've already created, but cannot add new photos or log new flights beyond the free tier limits until you renew.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What does the "Founder Lifetime" pass mean? Is it a subscription?</div>
-                <div class="faq-answer">The <strong>Founder Lifetime Pass</strong> is a one-time purchase with $0 recurring fees forever. It grants you permanent, VIP all-access to all current and future Explorer Pass features for the lifetime of the Pinpal app. You will never be billed again, and your access will never expire.</div>
+                <div class="faq-question">What does the "Founder Lifetime" pass mean? Is it really lifetime?</div>
+                <div class="faq-answer">The <strong>Founder Lifetime Pass</strong> is a one-time purchase with <strong>$0 recurring fees forever</strong>. It grants you non-expiring, VIP access to all Explorer Pass features, including current capabilities and upcoming updates released for the Pinpal application. You will never be billed again, and your access will never expire. We actively maintain and optimize Pinpal across new iPhone generations and major iOS releases. As standard in consumer software, "lifetime" refers to the commercial and operational lifecycle of the Pinpal application itself on supported platforms.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What happens if I get a new iPhone or switch devices?</div>
+                <div class="faq-answer">Your purchases and data are fully portable:
+                    <ul style="margin-top:6px; padding-left:18px;">
+                        <li><strong>Restoring Purchases:</strong> Tap the <strong>👑 Explorer Pass</strong> button and select <strong>"Restore Purchases"</strong>. Your Apple ID will immediately re-activate your Lifetime or active subscription.</li>
+                        <li><strong>Transferring Travel Data:</strong> You can transfer your travel map to a new phone either by using <strong>Cloud Sync</strong> (entering your private Sync Key) or by using the <strong>Export Data Backup</strong> tool in settings to save and import your JSON backup file.</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">How does the 1 Free Photo Taste work?</div>
-                <div class="faq-answer">Every traveler gets 1 free photo to test out the Photo Map on any state of their choice. To unlock photo fills across all 50 states and unlimited Polaroid vaults, upgrade to the <strong>Explorer Pass</strong>.</div>
+                <div class="faq-answer">Every traveler receives 1 free photo slot to experience the Photo Map on any state of their choice. To unlock photo fills across all 50 states, unlimited Polaroid scrapbooks, and high-resolution Story Cards, you can upgrade to the <strong>Explorer Pass</strong>.</div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">How do I restore my Explorer Pass on a new device?</div>
-                <div class="faq-answer">Open Pinpal, tap the <strong>👑 Explorer Pass</strong> button, and tap <strong>"Restore Purchases"</strong> at the bottom of the modal. Your Apple ID will automatically restore your Lifetime or active subscription.</div>
+                <div class="faq-answer">Open Pinpal, tap the <strong>👑 Explorer Pass</strong> button in the navigation bar, and tap <strong>"Restore Purchases"</strong> at the bottom of the paywall modal. StoreKit will authenticate with your Apple ID and restore your entitlement automatically.</div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">Are my trip photos and location data kept private?</div>
-                <div class="faq-answer">Yes. Pinpal is built on a <strong>100% private, local-first</strong> architecture. Your photos and travel lore are compressed and stored locally on your device storage (IndexedDB). We never sell your data to advertisers or third parties.</div>
+                <div class="faq-answer">Yes, 100%. Pinpal is built on a <strong>local-first privacy architecture</strong>. Your photos, flight logs, and travel notes are stored locally in your device's client-side storage (IndexedDB). Pinpal does not use background GPS tracking and never sells, rents, or shares your personal data with advertisers or third parties.</div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">How do I manage or cancel an active subscription?</div>
-                <div class="faq-answer">Subscriptions are managed directly by Apple. Go to your iPhone <strong>Settings → [Your Name] → Subscriptions → Pinpal</strong> to change plans or cancel at any time.</div>
+                <div class="faq-answer">All subscriptions are billed and managed directly through Apple. To change or cancel your subscription at any time:
+                    <ol style="margin-top:6px; padding-left:20px;">
+                        <li>Open the <strong>Settings</strong> app on your iPhone or iPad.</li>
+                        <li>Tap your <strong>Name / Apple ID</strong> banner at the very top.</li>
+                        <li>Tap <strong>Subscriptions</strong>.</li>
+                        <li>Select <strong>Pinpal</strong>, then tap <strong>Cancel Subscription</strong>.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I request a refund?</div>
+                <div class="faq-answer">Because all financial transactions are processed by Apple's App Store via StoreKit, app developers do not have direct access to your payment details. You can request a refund directly from Apple within their standard refund window by visiting <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">reportaproblem.apple.com</a> using your Apple ID.</div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">How does Cloud Sync work?</div>
-                <div class="faq-answer">Tap the Cloud Sync button in the header to generate a private Sync Key. You can enter this key on your iPad, Mac, or secondary phone to keep your travel map synchronized.</div>
+                <div class="faq-answer">Tap the Cloud Sync icon in the top header to generate your private, anonymous Sync Key. Enter this key on your iPad, Mac, or secondary iPhone to keep your visited states and stats seamlessly synchronized without needing to create a password or social media account.</div>
             </div>
         </section>
 
         <section class="contact-box">
             <h2 style="justify-content:center;">💬 Still need assistance?</h2>
             <p style="color:var(--text-secondary); font-size:0.92rem; margin-top:6px;">
-                Have a question, feedback, or a bug to report? We respond within 24 hours.
+                Have a question, feedback, or a bug to report? Our support team responds within 24 hours.
             </p>
             <a href="mailto:pinpaltravel.support@gmail.com?subject=Pinpal%20Support%20Inquiry" class="contact-btn">
                 ✉️ Contact Support
@@ -194,7 +221,10 @@
 
         <footer class="footer">
             <p>&copy; 2026 Pinpal. All rights reserved.</p>
-            <p style="margin-top:4px;"><a href="privacy.html">Privacy Policy</a></p>
+            <p style="margin-top:6px;">
+                <a href="terms.html">Terms of Use (EULA)</a> &bull; 
+                <a href="privacy.html">Privacy Policy</a>
+            </p>
         </footer>
     </div>
 </body>
