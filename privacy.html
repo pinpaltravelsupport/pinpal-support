@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Privacy Policy • Pinpal: US Travel Map &amp; Memory Vault</title>
-    <meta name="description" content="Privacy Policy for Pinpal: US Travel Map & Memory Vault. Learn how our local-first architecture protects your personal travel data.">
+    <title>Privacy Policy • Pinpal: US Travel Scrapbook</title>
+    <meta name="description" content="Privacy Policy for Pinpal: US Travel Scrapbook. Learn how our local-first architecture protects your personal travel data.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -108,20 +108,24 @@
 
         <section class="card">
             <h2>1. Our Privacy Commitment</h2>
-            <p>At <strong>Pinpal: US Travel Map &amp; Memory Vault</strong> ("Pinpal", "we", "us"), we believe that your travel history, personal photos, and bucket-list memories belong exclusively to you. Pinpal is architected as a <strong>Local-First</strong> application, engineered so that your personal data resides on your personal device.</p>
+            <p>At <strong>Pinpal: US Travel Scrapbook</strong> ("Pinpal", "we", "us"), we believe that your travel history, personal photos, and bucket-list memories belong exclusively to you. Pinpal is architected as a <strong>Local-First</strong> application, engineered so that your personal photo albums and travel records reside on your personal device.</p>
         </section>
 
         <section class="card">
             <h2>2. Information We Handle (and Do Not Collect)</h2>
-            <p><strong>Personal Photos &amp; Travel Lore:</strong> When you add photos or travel memories to a state album, they are compressed and stored locally on your device using client-side IndexedDB storage. Your photos are not uploaded to public databases, analyzed by AI vision models, or shared with third parties.</p>
-            <p><strong>Zero Biometric Information Collection:</strong> Pinpal does not collect, capture, store, or process biometric data or facial geometry. We perform zero automated facial recognition, facial landmark detection, or artificial intelligence vision analysis on your uploaded travel photos. Photos remain static local image files stored solely inside your browser's local client storage (IndexedDB).</p>
+            <p><strong>Personal Photos &amp; Travel Scrapbook Memories:</strong> When you add photos or travel memories to a state album, they are compressed and stored locally on your device using client-side IndexedDB storage. Your personal photo files are never uploaded to our Cloud Sync servers, analyzed by AI vision models, or shared with third parties.</p>
+            <p><strong>Zero Biometric Information Collection (BIPA Compliance):</strong> Pinpal does not collect, capture, store, or process biometric identifiers or biometric information (as defined under the Illinois Biometric Information Privacy Act, 740 ILCS 14/, the Texas Capture or Use of Biometric Identifier Act, or similar state laws), nor does it extract facial geometry. We perform zero automated facial recognition, facial landmark detection, or artificial intelligence vision analysis on your uploaded travel photos. Photos remain static local image files stored solely inside your device's client storage (IndexedDB).</p>
             <p><strong>Zero GPS Tracking:</strong> Pinpal does not request, access, or track your device's real-time GPS location. All visited states, cities, national parks, and landmarks are recorded exclusively by manual user selection. We collect zero background or real-time location telemetry.</p>
-            <p><strong>Aviation Data:</strong> Flights entered into your personal logbook are stored in your device storage to calculate total air miles and render flight paths.</p>
+            <p><strong>Aviation Data:</strong> Flights entered into your personal logbook are stored in your device storage to calculate total air miles and render schematic flight paths.</p>
         </section>
 
         <section class="card">
-            <h2>3. Optional Cloud Sync</h2>
-            <p>If you choose to use the optional Cloud Sync feature to synchronize your travel map across your personal devices (e.g., iPhone, iPad, Mac), your travel summary is transmitted via encrypted HTTPS to our secure sync endpoint. Cloud Sync is identified strictly by an anonymous, user-generated <strong>Sync Key</strong>. No email address, phone number, real name, or social media profile is required to use Cloud Sync.</p>
+            <h2>3. Optional Cloud Sync &amp; Bearer Sync Key Security</h2>
+            <p>Pinpal automatically generates a unique, random per-device <strong>Sync Key</strong> (e.g., <code>pinpal-xxxxxxxx</code>) so you can optionally synchronize your travel map across your personal devices (e.g., iPhone, iPad, Mac/PC) without creating an account, password, or providing an email address, phone number, or real name.</p>
+            <ul>
+                <li><strong>Metadata-Only Synchronization:</strong> Cloud Sync transmits <strong>only lightweight map and checklist metadata</strong> (visited state statuses, cities, landmark checklists, flight logbook entries, and road trip stops). <strong>Personal photo files are automatically stripped prior to Cloud Sync transmission and remain 100% on your local device</strong> (to transfer photos between devices, use the local <strong>Export Data Backup</strong> JSON file tool).</li>
+                <li><strong>Bearer Key Responsibility:</strong> Your Sync Key functions as an anonymous bearer token. Anyone who knows your exact Sync Key can view or merge the travel checklist metadata associated with that key. Do not replace your auto-generated Sync Key with easily guessable common words (such as your first name or "test"), and keep your Sync Key confidential.</li>
+            </ul>
         </section>
 
         <section class="card">
@@ -133,19 +137,20 @@
             <h2>5. Data Retention, Portability &amp; Deletion</h2>
             <p>You have full sovereignty over your travel data at all times:</p>
             <ul>
-                <li><strong>Deletion:</strong> You can delete individual photos, flights, or state records directly in the app. Tapping the <strong>Reset Progress (🔄)</strong> button in the app header allows you to permanently erase all local records immediately.</li>
-                <li><strong>Data Portability:</strong> You can export your complete travel history and photo metadata into an unencrypted, portable JSON file at any time using the <strong>Export Data Backup</strong> tool in the settings drawer.</li>
+                <li><strong>Deletion:</strong> You can delete individual photos, flights, trips, or state records directly in the app. Tapping the <strong>Reset All Data</strong> button in the app settings allows you to permanently erase all local records immediately. You may also request deletion of any Cloud Sync profile key by emailing support.</li>
+                <li><strong>Data Portability:</strong> You can export your complete travel history and photo library into an unencrypted, portable JSON file at any time using the <strong>Export Data Backup</strong> tool in the Cloud Sync &amp; Backup modal.</li>
             </ul>
         </section>
 
         <section class="card">
-            <h2>6. Third-Party Services &amp; Analytics</h2>
-            <p>Pinpal does not incorporate third-party advertising SDKs, cross-app trackers, or data-broker libraries. We do not sell, rent, or trade your personal information to third parties under the California Consumer Privacy Act (CCPA) or European General Data Protection Regulation (GDPR).</p>
+            <h2>6. Zero Third-Party Wiretapping, Trackers &amp; Multi-State Privacy Rights</h2>
+            <p><strong>Anti-Wiretapping &amp; Zero Pen-Register Certification (CIPA Compliance):</strong> Pinpal does <strong>not</strong> embed any third-party session-replay software, keystroke recorders, chat-bot wiretaps, spy pixels, cross-site tracking cookies, or pen-register / trap-and-trace beacons within the meaning of the California Invasion of Privacy Act (Cal. Penal Code §§ 631, 638.51), the Federal Wiretap Act, or state wiretapping statutes.</p>
+            <p><strong>US State Privacy Rights (CCPA/CPRA, VCDPA, CPA, CTDPA, TDPSA &amp; GDPR):</strong> Pinpal does not incorporate third-party advertising SDKs or data-broker libraries. We do <strong>not</strong> "sell" or "share" (for cross-context behavioral advertising) your personal information, sensitive personal information, or geolocation data under the California Consumer Privacy Act (CCPA/CPRA), Virginia Consumer Data Protection Act (VCDPA), Colorado Privacy Act (CPA), Connecticut Data Privacy Act (CTDPA), Texas Data Privacy and Security Act (TDPSA), or European General Data Protection Regulation (GDPR).</p>
         </section>
 
         <section class="card">
             <h2>7. Children's Privacy (COPPA Compliance)</h2>
-            <p>Pinpal does not knowingly collect or solicit personal information from children under the age of 13. Because our application operates on a local-first basis without user account registration, no identifiable child data is harvested or retained.</p>
+            <p>Pinpal does not knowingly collect, solicit, or store personal information from children under the age of 13 (or under 16 where applicable by jurisdiction). Because our application operates on a local-first basis without user account registration, no identifiable child data is harvested or retained.</p>
         </section>
 
         <section class="card">
